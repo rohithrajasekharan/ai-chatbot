@@ -1,6 +1,6 @@
 This is a simple AI chatbot made using vercel AI SDK (model used: gemini-1.5-flash-latest).
 
-## https://ai-chatbot-pi-ruby.vercel.app/
+# *https://ai-chatbot-pi-ruby.vercel.app/*
 
 ## Getting Started
 

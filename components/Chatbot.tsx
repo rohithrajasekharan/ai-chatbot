@@ -28,7 +28,7 @@ export default function Chatbot() {
         {messages.map(m => {
           if (m.role === 'assistant') {
             return (
-              <div className="flex items-start gap-4">
+              <div key={m.id} className="flex items-start gap-4">
                 <Avatar className="w-8 h-8 border">
                   <AvatarImage src="/placeholder-user.jpg" />
                   <AvatarFallback>AI</AvatarFallback>
@@ -40,7 +40,7 @@ export default function Chatbot() {
             )
           } else {
             return(
-              <div className="flex items-start gap-4 justify-end">
+              <div key={m.id} className="flex items-start gap-4 justify-end">
                 <div className="bg-primary rounded-lg p-3 max-w-[70%] text-primary-foreground">
                   <p>{m.content}</p>
                 </div>

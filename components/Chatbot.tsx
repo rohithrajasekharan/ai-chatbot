@@ -9,7 +9,7 @@ import { useChat } from 'ai/react';
 export default function Chatbot() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
   return (
-    <div className="flex flex-col h-[80vh] max-w-2xl mx-auto bg-background rounded-2xl shadow-lg min-w-[70%]">
+    <div className="flex flex-col h-screen sm:h-[80vh] max-w-2xl mx-auto bg-background rounded-2xl shadow-lg min-w-[100%]">
       <div className="flex items-center justify-between px-6 py-4 border-b border-muted">
         <div className="flex items-center gap-3">
           <Avatar className="w-8 h-8 border">

@@ -3,6 +3,7 @@
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
+import { renderMarkdown } from "@/lib/utils";
 import { useChat } from 'ai/react';
 
 export default function Chatbot() {
@@ -33,7 +34,7 @@ export default function Chatbot() {
                   <AvatarFallback>AI</AvatarFallback>
                 </Avatar>
                 <div className="bg-muted rounded-lg p-3 max-w-[70%]">
-                  <p>{m.content}</p>
+                <div dangerouslySetInnerHTML={{ __html: renderMarkdown(m.content) }} />
                 </div>
               </div>
             )
